@@ -1,0 +1,7 @@
+
+the below code will get max value in the timewindow of 2 min
+
+df2 = df["presenceDetected"].groupby(df["uuid"]).resample('120s').max()
+
+
+print(df["presenceDetected"].groupby(df["uuid"]).rolling('120s').sum())

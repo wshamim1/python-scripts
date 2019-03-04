@@ -1,0 +1,57 @@
+
+create API using Flask :
+
+```
+from flask import  Flask,render_template
+
+app = Flask(__name__)
+
+@app.route('/index')
+def index1():
+    print('I am in index')
+    return('index 1')
+
+@app.route('/flaskdemo1')
+def index2():
+    return render_template('flaskdemo1.html')
+
+@app.route('/about')
+def about():
+    return render_template('abouthtml.html')
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=1380)
+```
+
+In the template folder place flaskdemo1.html
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my flask demo</title>
+</head>
+<body>
+    <h1>this is a demo</h1>
+</body>
+</html>
+```
+
+and another file abouthtml.html
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>this is about</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/styles.css') }}">
+
+</head>
+<body>
+    <p id="pp">I am working on flask and is about page</p>
+    <a href="{{ url_for('index1') }}">tst</a>
+</body>
+</html>
+```

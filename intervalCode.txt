@@ -1,0 +1,10 @@
+import time
+
+def executeSomething():
+    print("doing it")
+    time.sleep(10)
+
+while True:
+    executeSomething()
+    
+above code will print the output every 10 secs

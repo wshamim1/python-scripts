@@ -1,0 +1,25 @@
+We need to install kafka module
+pip install kafka-python
+
+Kafka Consumer:
+
+```
+from kafka import KafkaConsumer
+
+consumer = KafkaConsumer("T1", bootstrap_servers="host:9092",
+                         auto_offset_reset='earliest'
+                         )
+
+for message in consumer:
+    ds = message.value
+    print(ds)
+```
+
+kafka producer:
+
+from kafka import KafkaProducer
+producer = KafkaProducer(bootstrap_servers='localhost:1234')
+for _ in range(100):
+     producer.send('foobar', b'some_message_bytes')
+
+

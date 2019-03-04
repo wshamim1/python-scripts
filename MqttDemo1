@@ -1,0 +1,46 @@
+1. install paho-mqtt.
+
+```
+
+import paho.mqtt.client as paho
+import json
+import  pandas as pd
+import pytz
+import time
+
+
+client1= paho.Client('client1')
+client1.connect('host:port')
+
+
+def on_message(client1, userdata, msg):
+    payload = msg.payload.decode()
+    print("Presence data received",payload)
+
+    jsonPayload = json.loads(payload)
+
+    df.loc[len(df)] = jsonPayload
+    uuid = jsonPayload["uuid"]
+    room = mt.Thisdict[uuid]
+
+    timestamp= jsonPayload["timestamp"]
+    ts = time.strptime(timestamp[:19], "%Y-%m-%dT%H:%M:%S")
+    ts1 = time.strftime("%Y-%m-%d %H:%M:%S",ts)
+
+
+    presenceDetected = jsonPayload["presenceDetected"]
+
+    strPayload = str(room)+','+str(ts1)+','+str(presenceDetected)+"\n"
+
+    with open(const.presence_mqtt_input,'a') as f:
+       f.write(strPayload)
+
+
+
+client1.on_connect = on_connect
+client1.on_message = on_message
+
+client1.loop_forever()
+client1.disconnect();
+
+```

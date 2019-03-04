@@ -1,0 +1,10 @@
+import requests
+
+url = 'http://localhost:1380/index'
+data = '{"item": "shamim"  }}'
+headers = {"Accept": "application/json","Content-Type":"application/json"}
+response = requests.get(url)
+
+
+print("--",response.text)
+

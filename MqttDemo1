@@ -13,6 +13,17 @@ client1= paho.Client('client1')
 client1.connect('host:port')
 
 
+def on_connect(client1, userdata, flags, rc):
+    print("Connected with result code " + str(rc))
+    client1.subscribe(const.presence_subscriber)
+
+dis = {}
+est = pytz.timezone('US/Eastern')
+
+df = pd.DataFrame(columns=["uuid","timestamp","presenceDetected"])
+print(df)
+
+
 def on_message(client1, userdata, msg):
     payload = msg.payload.decode()
     print("Presence data received",payload)
@@ -44,3 +55,5 @@ client1.loop_forever()
 client1.disconnect();
 
 ```
+
+the above code will constantly get the message from a topic and write to the file.

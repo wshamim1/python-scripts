@@ -1,0 +1,23 @@
+range function: this will give an option to iterate over numbers
+
+range(N) - this will iterate from 0 till N-1
+
+print(range(3)) 
+0
+1
+2
+
+range(start,end) - this will iterate from start till end-1
+
+range (5,10) - 
+5,6,7,8,9
+
+range(start,end,step) - this will iterate from start till end-1 with step value
+
+range(0, 10, 3)
+   0, 3, 6, 9
+   
+we can also use range to generat a  list
+
+list(range(5))
+[0, 1, 2, 3, 4]

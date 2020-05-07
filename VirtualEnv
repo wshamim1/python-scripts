@@ -1,0 +1,14 @@
+how to create virtual env in pycharm
+
+create a new empty project.
+go to the terminal and click on the '+' sign at the top left.
+A folder Venv  will be created. like (venv) C:\Users\username\PycharmProjects\PyProject1>
+now you can install the modules.
+
+All the modules will be saved under 
+
+venv/LIB/site-packages
+
+
+
+

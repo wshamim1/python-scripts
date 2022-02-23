@@ -1,0 +1,10 @@
+setup.py
+WilsonCalculator/Addition.py
+WilsonCalculator/Division.py
+WilsonCalculator/Multiplication.py
+WilsonCalculator/Subtraction.py
+WilsonCalculator/__init__.py
+WilsonCalculators.egg-info/PKG-INFO
+WilsonCalculators.egg-info/SOURCES.txt
+WilsonCalculators.egg-info/dependency_links.txt
+WilsonCalculators.egg-info/top_level.txt

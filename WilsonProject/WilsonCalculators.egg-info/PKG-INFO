@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: WilsonCalculators
+Version: 1.1.0
+Summary: My first Python package ... Calculator
+Home-page: UNKNOWN
+Author: Wislon Shamim
+Author-email: shamim.797@gmail.com
+License: UNKNOWN
+Description: My first Python package with a slightly longer description
+Keywords: python,first package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows

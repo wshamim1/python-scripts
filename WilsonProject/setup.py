@@ -10,7 +10,7 @@ setup(
     name="WilsonCalculators",
     version=VERSION,
     author="Wislon Shamim",
-    author_email="shamim.797@gmail.com",
+    author_email="your email",
     description=DESCRIPTION,
     long_description=LONG_DESCRIPTION,
     packages=find_packages(),

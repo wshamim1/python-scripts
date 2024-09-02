@@ -23,7 +23,7 @@ This repository contains a collection of Python scripts for generating various t
 1. Clone this repository:
    ```
    git clone https://github.com/your-username/python-scripts.git
-   cd python-scripts/faker-data
+   cd python-scripts/FakerScripts
    ```
 
 2. Install the required dependencies:
@@ -47,7 +47,7 @@ This repository contains the following scripts:
 To generate fake data in CSV format:
 
 ```
-python generate_csv_data.py
+python GenerateFakeCSVData.py
 ```
 
 This will create a file named `fake_data.csv` in the current directory.
@@ -57,7 +57,7 @@ This will create a file named `fake_data.csv` in the current directory.
 To create fake data in Parquet format:
 
 ```
-python generate_parquet_data.py
+python GenerateFakeParquetData.py
 ```
 
 This script will produce a file named `fake_data.parquet`.
@@ -67,7 +67,7 @@ This script will produce a file named `fake_data.parquet`.
 To generate fake personal data in XML format:
 
 ```
-python generate_xml_data.py
+python GenerateFakeXMLData.py
 ```
 
 This will create a file named `fake_people_catalog.xml`.
@@ -77,7 +77,7 @@ This will create a file named `fake_people_catalog.xml`.
 To produce fake data in JSON format:
 
 ```
-python generate_json_data.py
+python GenerateFakeJsonData.py
 ```
 
 This script will create a file named `fake_data.json`.

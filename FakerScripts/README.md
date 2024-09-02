@@ -35,10 +35,10 @@ This repository contains a collection of Python scripts for generating various t
 
 This repository contains the following scripts:
 
-1. `generate_csv_data.py`: Generates fake data and saves it as a CSV file.
-2. `generate_parquet_data.py`: Creates fake data and stores it in Parquet format.
-3. `generate_xml_data.py`: Produces fake personal data in XML format.
-4. `generate_json_data.py`: Generates fake data and saves it as a JSON file.
+1. `GenerateFakeCSVData.py`: Generates fake data and saves it as a CSV file.
+2. `GenerateFakeParquetData.py`: Creates fake data and stores it in Parquet format.
+3. `GenerateFakeXMLData.py`: Produces fake personal data in XML format.
+4. `GenerateFakeJsonData.py`: Generates fake data and saves it as a JSON file.
 
 ## Usage
 

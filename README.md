@@ -23,7 +23,7 @@ This repository contains a collection of Python scripts for generating various t
 1. Clone this repository:
    ```
    git clone https://github.com/your-username/python-scripts.git
-   cd python-scripts
+   cd python-scripts/faker-data
    ```
 
 2. Install the required dependencies:
